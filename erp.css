@@ -1,0 +1,152 @@
+html , body
+{
+	margin: 0;
+	padding: 0;
+}
+.nav
+{
+	width: 100%;
+	height: 50px;
+	background:  linear-gradient(to bottom, #0099cc 0%, #003399 100%);
+	overflow: hidden;
+}
+.nav .left-menu 
+{
+	display: block;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+.nav .right-menu
+{
+	display: block;
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+}
+.nav a
+{
+	padding: 10px;
+	color: #cccccc;
+	text-decoration: none;
+	font-weight: bold;
+}
+.nav a:hover
+{
+	color: white;
+	font-weight: bolder;
+}
+.module-body 
+{
+	text-decoration: none;
+	display: none;
+}
+.module-body a
+{
+	color: #0868FF;
+	text-decoration: none;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li
+{
+	background-color: #99ccff;
+	color: #0868FF;
+	border: 1px solid #0868F8;
+	border-radius: 5px;
+	margin: 3px;
+	padding-left: 10px;
+}
+li:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.module-box
+{
+	padding: 0;
+	margin: 0;
+}
+
+.modules
+{
+	width: 100%;
+	height: 50px;
+	padding-left:  10px;
+	padding-top: 10px;
+	color: #444444;
+	background: linear-gradient(to bottom, #eeeeee -7%, #bbbbbb 119%);
+}
+.text:hover
+{
+	cursor: pointer;
+	color: blue;
+}
+#point
+{
+	border: 1.5px solid #888888;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+#point:hover
+{
+	cursor: pointer;
+}
+#adm-list , #fee-list , #emp-list , #stu-list , #acad-list , #lib-list , #hos-list
+{
+	display: none;
+	
+}
+#adm-list li , #fee-list li , #emp-list li ,#stu-list li, #acad-list li , #lib-list li, #hos-list li
+{
+	background-color: #cccccc;
+	margin: 0;
+	border-color: #444444;
+}
+#adm-drop:hover , #fee-drop:hover  , #emp-drop:hover  , #stu-drop:hover  , #acad-drop:hover 
+ , #lib-drop:hover  , #hos-drop:hover 
+{
+	cursor: pointer;
+}
+
+.row
+{
+	border : 1px solid blue;
+	border-radius: 5px;
+	width: 98%;
+	margin: 10px;
+
+}
+.panel-title
+{
+	background-color: #99ccff;
+	color: blue;
+	width: 100%;
+	margin-top: 0;
+}
+
+#icon
+{
+	color: #0868FF;
+}
+#icon:hover
+{
+	color: #0868AA;
+}
+
+.un
+{
+	background-color: #CCCCCC; 
+	border: 1px solid  #888888;
+	border-radius: 5px;
+	margin-bottom:  2px;
+	padding: 0;
+}

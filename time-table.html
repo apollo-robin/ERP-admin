@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ERP System</title>
+	<link rel="stylesheet" type="text/css" href="erp.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="erp.js"></script>
+</head>
+<body>
+<div class="nav">
+	<div class="left-menu">
+	<a href="#">ERP System </a>
+	<a href="erp.html"> <i class="fa fa-home"></i>Home </a>
+	<a href="#"> <i class="fa fa-key fa-lg"></i>Retrive Passphrase</a>
+	</div>
+	<div class="right-menu">
+	<a href="#"> Welcome Admin </a>
+	<a href="#"> <i class="fa fa-sign-out fa-lg"></i>Logout</a>
+	</div> 
+</div>
+<div class="module-box" >
+	<h3 class="modules"> <i class="fa fa-bars" onclick="show('mod')" id="point" > </i>  <span class="text">Modules</span> </h3> 
+	<div class="module-body" id="mod">
+		<ul>
+		<li onclick="show('adm-list')" > <i class="fa fa-arrow-right" onclick="show('adm-list')" id="adm-drop"></i> Admissions </li>
+				<div id="adm-list">
+					<ul>
+						<li><a href="registration.html"> Registrations </a> </li>
+						<li> <a href="admission.html"> Admissions </a> </li>
+						<li> <a href="adm-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('fee-list')"> <i class="fa fa-arrow-right" onclick="show('fee-list')" id="fee-drop"></i> Fees and payments </li>
+				<div id="fee-list">
+					<ul>
+						<li> <a href="fee.html"> Fee Structure </a> </li>
+						<li> <a href="fee-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('emp-list')"> <i class="fa fa-arrow-right" onclick="show('emp-list')" id="emp-drop"></i> Employee Management  </li>
+				<div id="emp-list">
+					<ul>
+						<li><a href="emp-attendance.html"> Employee Attendance </a> </li>
+						<li> <a href="payroll.html"> Payroll </a> </li>
+						<li> <a href="emp-feedback.html"> Employee's Feedback </a> </li>
+						<li> <a href="emp-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('stu-list')"> <i class="fa fa-arrow-right" onclick="show('stu-list')" id="stu-drop"></i> Student Management </li>
+				<div id="stu-list">
+					<ul>
+						<li> <a href="stu-attendance.html"> Student Attendance </a> </li>
+						<li> <a href="stu-result.html"> Results Overview </a> </li>
+						<li> <a href="stu-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('acad-list')">  <i class="fa fa-arrow-right" onclick="show('acad-list')" id="acad-drop"></i> Academics </li>
+				<div id="acad-list">
+					<ul>
+						<li> <a href="course.html"> Course Management</a> </li>
+						<li> <a href="time-table.html"> Time Table</a> </li>
+						<li> <a href="exam.html"> Examination </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('lib-list')"> <i class="fa fa-arrow-right" onclick="show('lib-list')" id="lib-drop"></i> Library Management </li>
+				<div id="lib-list">
+					<ul>
+						<li> <a href="book.html"> Books stock </a> </li>
+						<li> <a href="issue.html"> Issues and Returns </a> </li>
+						<li> <a href="lib-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li onclick="show('hos-list')"> <i class="fa fa-arrow-right" onclick="show('hos-list')" id="hos-drop" ></i> Hostels Management </li>
+				<div id="hos-list">
+					<ul>
+						<li> <a href="boarder.html"> Boarders </a> </li>
+						<li> <a href="mess.html"> Mess </a> </li>
+						<li> <a href="hos-report.html"> Reports </a> </li>
+					</ul>
+				</div>
+		<li> <a href="resource.html"><i class="fa fa-arrow-right"></i> Resource Management </a></li>
+		<li> <a href="alumni.html"><i class="fa fa-arrow-right"></i> Alumni Management </a></li>
+		<li> <a href="annual-report.html"><i class="fa fa-arrow-right"></i> Annual Reports</a> </li>
+		<li> <a href="feedback.html"><i class="fa fa-arrow-right"></i> Submitted Feedback </a></li>
+		</ul>
+	</div>
+</div>
+<div class="record"> No records. </div>
+<form action="time-table.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="fileToUpload" id="fileToUpload">
+	<input type="submit" value="Add Time Table" name="submit">
+</form>
+</body>
+</html>
