@@ -7,8 +7,9 @@ html , body
 {
 	width: 100%;
 	height: 50px;
-	background:  linear-gradient(to bottom, #0099cc 0%, #003399 100%);
+	background:  linear-gradient(to bottom, #6991BC 0%, #3E648D 100%);
 	overflow: hidden;
+	border: 1px solid #345578;
 }
 .nav .left-menu 
 {
@@ -30,7 +31,7 @@ html , body
 .nav a
 {
 	padding: 10px;
-	color: #cccccc;
+	color: #DDDDDD;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -46,7 +47,7 @@ html , body
 }
 .module-body a
 {
-	color: #0868FF;
+	color: #3A87AD;
 	text-decoration: none;
 }
 ul
@@ -57,9 +58,9 @@ ul
 }
 li
 {
-	background-color: #99ccff;
-	color: #0868FF;
-	border: 1px solid #0868F8;
+	background-color: #D9EDF7;
+	color: #3A87AD;
+	border: 1px solid #BCE8F1;
 	border-radius: 5px;
 	margin: 3px;
 	padding-left: 10px;
@@ -81,13 +82,13 @@ li:hover
 	height: 50px;
 	padding-left:  10px;
 	padding-top: 10px;
-	color: #444444;
-	background: linear-gradient(to bottom, #eeeeee -7%, #bbbbbb 119%);
+	color: #777777;
+	background: linear-gradient(to bottom, #ffffff 0%, #E5E5E5 100%);
 }
 .text:hover
 {
 	cursor: pointer;
-	color: blue;
+	color: #3399F3;
 }
 #point
 {
@@ -107,9 +108,10 @@ li:hover
 }
 #adm-list li , #fee-list li , #emp-list li ,#stu-list li, #acad-list li , #lib-list li, #hos-list li
 {
-	background-color: #cccccc;
-	margin: 0;
-	border-color: #444444;
+	background-color: #F5F5F5;
+	border-color: #E3E3E3;
+	color: #5DD8F4;
+	padding-left: 15px;
 }
 #adm-drop:hover , #fee-drop:hover  , #emp-drop:hover  , #stu-drop:hover  , #acad-drop:hover 
  , #lib-drop:hover  , #hos-drop:hover 
@@ -119,7 +121,7 @@ li:hover
 
 .row
 {
-	border : 1px solid blue;
+	border : 1px solid #BCE8F1;
 	border-radius: 5px;
 	width: 98%;
 	margin: 10px;
@@ -127,15 +129,15 @@ li:hover
 }
 .panel-title
 {
-	background-color: #99ccff;
-	color: blue;
+	background-color: #D9EDF7;
+	color: #3A87AD;
 	width: 100%;
 	margin-top: 0;
 }
 
 #icon
 {
-	color: #0868FF;
+	color: #3399F3;
 }
 #icon:hover
 {
@@ -144,8 +146,8 @@ li:hover
 
 .un
 {
-	background-color: #CCCCCC; 
-	border: 1px solid  #888888;
+	background-color: #F5F5F5; 
+	border: 1px solid  #E3E3E3;
 	border-radius: 5px;
 	margin-bottom:  2px;
 	padding: 0;

@@ -1,0 +1,58 @@
+input[type="text"]:focus
+{
+	box-shadow: 0 2px 2px black;
+}
+input[type="submit"]
+{
+	background-color: #3C8DBC;
+	border: 2px solid #367FA9;
+	border-radius: 2px;
+	color: #FFFFFF;
+	height: 40px;
+	width: 120px;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #ECF0F5;
+	cursor: pointer;
+	box-shadow: 0 2px 2px black;
+	color: black;
+}
+
+.boa , .mess-menu
+{
+	border: 30px solid #ECF0F5;  
+}
+.boa-con , .mess-con , .list-con , .mes-con
+{
+	margin-left: 10px;
+}
+.slot , .day 
+{
+	background-color: #557CD7;
+	color: #EFFFFF;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#list-con , #mes-con
+{
+	display: none;
+	margin-left: 10px;
+	border: 30px solid #ECF0F5; 
+}
+.boa-list
+{
+	background-color: #D9EDF7;
+	border: 1px solid #BCE8F1;
+	border-radius: 2px;
+	color: #3A9DDF;
+	margin: 3px;
+}
+.boa-list:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}

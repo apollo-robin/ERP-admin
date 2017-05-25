@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title> ERP System</title>
-	<link rel="stylesheet" type="text/css" href="erp.css">
+	<link rel="stylesheet" type="text/css" href="./css/erp.css">
+	<link rel="stylesheet" type="text/css" href="./css/library.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="erp.js"></script>
 </head>
@@ -22,7 +23,7 @@
 	<h3 class="modules"> <i class="fa fa-bars" onclick="show('mod')" id="point" > </i>  <span class="text">Modules</span> </h3> 
 	<div class="module-body" id="mod">
 		<ul>
-		<li onclick="show('adm-list')" > <i class="fa fa-arrow-right" onclick="show('adm-list')" id="adm-drop"></i> Admissions </li>
+		<li onclick="show('adm-list')" > <i class="fa fa-plus-square" onclick="show('adm-list')" id="adm-drop"></i> Admissions </li>
 				<div id="adm-list">
 					<ul>
 						<li><a href="registration.html"> Registrations </a> </li>
@@ -30,14 +31,14 @@
 						<li> <a href="adm-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('fee-list')"> <i class="fa fa-arrow-right" onclick="show('fee-list')" id="fee-drop"></i> Fees and payments </li>
+		<li onclick="show('fee-list')"> <i class="fa fa-plus-square" onclick="show('fee-list')" id="fee-drop"></i> Fees and payments </li>
 				<div id="fee-list">
 					<ul>
 						<li> <a href="fee.html"> Fee Structure </a> </li>
 						<li> <a href="fee-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('emp-list')"> <i class="fa fa-arrow-right" onclick="show('emp-list')" id="emp-drop"></i> Employee Management  </li>
+		<li onclick="show('emp-list')"> <i class="fa fa-plus-square" onclick="show('emp-list')" id="emp-drop"></i> Employee Management  </li>
 				<div id="emp-list">
 					<ul>
 						<li><a href="emp-attendance.html"> Employee Attendance </a> </li>
@@ -46,7 +47,7 @@
 						<li> <a href="emp-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('stu-list')"> <i class="fa fa-arrow-right" onclick="show('stu-list')" id="stu-drop"></i> Student Management </li>
+		<li onclick="show('stu-list')"> <i class="fa fa-plus-square" onclick="show('stu-list')" id="stu-drop"></i> Student Management </li>
 				<div id="stu-list">
 					<ul>
 						<li> <a href="stu-attendance.html"> Student Attendance </a> </li>
@@ -54,7 +55,7 @@
 						<li> <a href="stu-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('acad-list')">  <i class="fa fa-arrow-right" onclick="show('acad-list')" id="acad-drop"></i> Academics </li>
+		<li onclick="show('acad-list')">  <i class="fa fa-plus-square" onclick="show('acad-list')" id="acad-drop"></i> Academics </li>
 				<div id="acad-list">
 					<ul>
 						<li> <a href="course.html"> Course Management</a> </li>
@@ -62,7 +63,7 @@
 						<li> <a href="exam.html"> Examination </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('lib-list')"> <i class="fa fa-arrow-right" onclick="show('lib-list')" id="lib-drop"></i> Library Management </li>
+		<li onclick="show('lib-list')"> <i class="fa fa-plus-square" onclick="show('lib-list')" id="lib-drop"></i> Library Management </li>
 				<div id="lib-list">
 					<ul>
 						<li> <a href="book.html"> Books stock </a> </li>
@@ -70,7 +71,7 @@
 						<li> <a href="lib-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('hos-list')"> <i class="fa fa-arrow-right" onclick="show('hos-list')" id="hos-drop" ></i> Hostels Management </li>
+		<li onclick="show('hos-list')"> <i class="fa fa-plus-square" onclick="show('hos-list')" id="hos-drop" ></i> Hostels Management </li>
 				<div id="hos-list">
 					<ul>
 						<li> <a href="boarder.html"> Boarders </a> </li>
@@ -78,17 +79,31 @@
 						<li> <a href="hos-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li> <a href="resource.html"><i class="fa fa-arrow-right"></i> Resource Management </a></li>
-		<li> <a href="alumni.html"><i class="fa fa-arrow-right"></i> Alumni Management </a></li>
-		<li> <a href="annual-report.html"><i class="fa fa-arrow-right"></i> Annual Reports</a> </li>
-		<li> <a href="feedback.html"><i class="fa fa-arrow-right"></i> Submitted Feedback </a></li>
+		<li> <a href="resource.html"><i class="fa fa-plus-square"></i> Resource Management </a></li>
+		<li> <a href="alumni.html"><i class="fa fa-plus-square"></i> Alumni Management </a></li>
+		<li> <a href="annual-report.html"><i class="fa fa-plus-square"></i> Annual Reports</a> </li>
+		<li> <a href="feedback.html"><i class="fa fa-plus-square"></i> Submitted Feedback </a></li>
 		</ul>
 	</div>
 </div>
 <div class="record"> No records. </div>
-<form action="books.php" method="post" enctype="multipart/form-data">
-	<input type="file" name="fileToUpload" id="fileToUpload">
-	<input type="submit" value="Add Books in Stock" name="submit">
+<form action="./database/books.php" method="post" enctype="multipart/form-data" class="book-name">
+<div class="book-con">
+<h3 class="book-h"> Add a Book to Stock: </h3>
+<table class="book-table">
+	<tr>
+		<td>Book Name</td>
+		<td>ISBN Code</td>
+		<td>Author name</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="book-name" value="Enter Book's Name"></td>
+		<td><input type="text" name="book-code" value="Enter ISBN's Code"></td>
+		<td><input type="text" name="author-name" value="Enter Author's name"></td>
+	</tr>
+</table>
+	<input type="submit" value="Add Book" name="submit">
+</div>
 </form>
 </body>
 </html>

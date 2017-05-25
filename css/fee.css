@@ -1,0 +1,67 @@
+input[type="submit"]
+{
+	background-color: #3C8DBC;
+	border: 2px solid #367FA9;
+	border-radius: 2px;
+	color: #FFFFFF;
+	height: 40px;
+	width: 120px;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #ECF0F5;
+	cursor: pointer;
+	box-shadow: 0 2px 2px black;
+	color: black;
+}
+input[type="text"]:focus
+{
+	box-shadow: 0 2px 2px black;
+}
+#fee-con , #stu-con , #stud-con , #date-con , #year-con , #tra-con
+{
+	display: none;
+	border: 30px solid #ECF0F5; 
+	padding: 10px;
+}
+#money-con
+{
+	display: none;
+}
+.fee
+{
+	background-color: #D9EDF7;
+	border: 1px solid #BCE8F1;
+	border-radius: 2px;
+	color: #3A9DDF;
+	margin: 3px;
+}
+.fee:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.fee-top , 
+{
+	background-color: #557CD7;
+	color: #EFFFFF;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.fee-stu , .fee-date , .fee-year , .fee-tra
+{
+	background-color: #F5F5F5;
+	border: 1px solid #E3E3E3;
+	border-radius: 5px;
+	color: #3F87AF;
+	padding-left: 20px;
+	margin: 2px;
+}
+.fee-stu:hover , .fee-date:hover , .fee-year:hover , .fee-tra:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}

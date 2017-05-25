@@ -1,0 +1,45 @@
+input[type="submit"]
+{
+	background-color: #3C8DBC;
+	border: 2px solid #367FA9;
+	border-radius: 2px;
+	color: #FFFFFF;
+	height: 40px;
+	width: 120px;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #ECF0F5;
+	cursor: pointer;
+	box-shadow: 0 2px 2px black;
+	color: black;
+}
+input[type="text"]:focus
+{
+	box-shadow: 0 2px 2px black;
+}
+option
+{
+	width: 100px;
+}
+#add-con , #get-con
+{
+	display: none;
+	border: 30px solid #ECF0F5; 
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.report
+{
+	background-color: #D9EDF7;
+	border: 1px solid #BCE8F1;
+	border-radius: 2px;
+	color: #3A9DDF;
+	margin: 3px;
+}
+.report:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}

@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title> ERP System</title>
-	<link rel="stylesheet" type="text/css" href="erp.css">
+	<link rel="stylesheet" type="text/css" href="./css/erp.css">
+	<link rel="stylesheet" type="text/css" href="./css/employee.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="erp.js"></script>
 </head>
@@ -22,7 +23,7 @@
 	<h3 class="modules"> <i class="fa fa-bars" onclick="show('mod')" id="point" > </i>  <span class="text">Modules</span> </h3> 
 	<div class="module-body" id="mod">
 		<ul>
-		<li onclick="show('adm-list')" > <i class="fa fa-arrow-right" onclick="show('adm-list')" id="adm-drop"></i> Admissions </li>
+		<li onclick="show('adm-list')" > <i class="fa fa-plus-square" onclick="show('adm-list')" id="adm-drop"></i> Admissions </li>
 				<div id="adm-list">
 					<ul>
 						<li><a href="registration.html"> Registrations </a> </li>
@@ -30,14 +31,14 @@
 						<li> <a href="adm-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('fee-list')"> <i class="fa fa-arrow-right" onclick="show('fee-list')" id="fee-drop"></i> Fees and payments </li>
+		<li onclick="show('fee-list')"> <i class="fa fa-plus-square" onclick="show('fee-list')" id="fee-drop"></i> Fees and payments </li>
 				<div id="fee-list">
 					<ul>
 						<li> <a href="fee.html"> Fee Structure </a> </li>
 						<li> <a href="fee-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('emp-list')"> <i class="fa fa-arrow-right" onclick="show('emp-list')" id="emp-drop"></i> Employee Management  </li>
+		<li onclick="show('emp-list')"> <i class="fa fa-plus-square" onclick="show('emp-list')" id="emp-drop"></i> Employee Management  </li>
 				<div id="emp-list">
 					<ul>
 						<li><a href="emp-attendance.html"> Employee Attendance </a> </li>
@@ -46,7 +47,7 @@
 						<li> <a href="emp-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('stu-list')"> <i class="fa fa-arrow-right" onclick="show('stu-list')" id="stu-drop"></i> Student Management </li>
+		<li onclick="show('stu-list')"> <i class="fa fa-plus-square" onclick="show('stu-list')" id="stu-drop"></i> Student Management </li>
 				<div id="stu-list">
 					<ul>
 						<li> <a href="stu-attendance.html"> Student Attendance </a> </li>
@@ -54,7 +55,7 @@
 						<li> <a href="stu-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('acad-list')">  <i class="fa fa-arrow-right" onclick="show('acad-list')" id="acad-drop"></i> Academics </li>
+		<li onclick="show('acad-list')">  <i class="fa fa-plus-square" onclick="show('acad-list')" id="acad-drop"></i> Academics </li>
 				<div id="acad-list">
 					<ul>
 						<li> <a href="course.html"> Course Management</a> </li>
@@ -62,7 +63,7 @@
 						<li> <a href="exam.html"> Examination </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('lib-list')"> <i class="fa fa-arrow-right" onclick="show('lib-list')" id="lib-drop"></i> Library Management </li>
+		<li onclick="show('lib-list')"> <i class="fa fa-plus-square" onclick="show('lib-list')" id="lib-drop"></i> Library Management </li>
 				<div id="lib-list">
 					<ul>
 						<li> <a href="book.html"> Books stock </a> </li>
@@ -70,7 +71,7 @@
 						<li> <a href="lib-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li onclick="show('hos-list')"> <i class="fa fa-arrow-right" onclick="show('hos-list')" id="hos-drop" ></i> Hostels Management </li>
+		<li onclick="show('hos-list')"> <i class="fa fa-plus-square" onclick="show('hos-list')" id="hos-drop" ></i> Hostels Management </li>
 				<div id="hos-list">
 					<ul>
 						<li> <a href="boarder.html"> Boarders </a> </li>
@@ -78,17 +79,113 @@
 						<li> <a href="hos-report.html"> Reports </a> </li>
 					</ul>
 				</div>
-		<li> <a href="resource.html"><i class="fa fa-arrow-right"></i> Resource Management </a></li>
-		<li> <a href="alumni.html"><i class="fa fa-arrow-right"></i> Alumni Management </a></li>
-		<li> <a href="annual-report.html"><i class="fa fa-arrow-right"></i> Annual Reports</a> </li>
-		<li> <a href="feedback.html"><i class="fa fa-arrow-right"></i> Submitted Feedback </a></li>
+		<li> <a href="resource.html"><i class="fa fa-plus-square"></i> Resource Management </a></li>
+		<li> <a href="alumni.html"><i class="fa fa-plus-square"></i> Alumni Management </a></li>
+		<li> <a href="annual-report.html"><i class="fa fa-plus-square"></i> Annual Reports</a> </li>
+		<li> <a href="feedback.html"><i class="fa fa-plus-square"></i> Submitted Feedback </a></li>
 		</ul>
 	</div>
 </div>
 <div class="record"> No records. </div>
-<form action="emp-attendance.php" method="post" enctype="multipart/form-data">
-	<input type="file" name="fileToUpload" id="fileToUpload">
-	<input type="submit" value="Add Employee Attendance" name="submit">
+<form action="./database/emp-attendance.php" method="post" enctype="multipart/form-data">
+	<div class="att" onclick="show('att-con')"><i class="fa fa-plus-square" onclick="show('att-con')"></i>
+		 Mark Attendance </div>
+	<div id="att-con">
+	<h3 class="att-title"> Mark Employee's Attendance</h3> 
+	<table>
+		<tr>
+			<td> Date</td>
+			<td id="date"></td>
+		</tr>
+		<tr>
+			<td> Employee's Id</td>
+			<td> <input type="text" name="name" value="Enter Id Here"></td>
+		</tr>
+		<tr>
+			<td> Employee's Name</td>
+			<td> <input type="text" name="name" value="Enter Name Here"></td>
+		</tr>
+		<tr>
+			<td> Subject Code</td>
+			<td> <input type="text" name="code" value="Enter Subject Code"></td>
+		</tr>
+		<tr>
+			<td> <input type="radio" name="att"> Present </td>
+			<td> <input type="radio" name="att"> Absent </td>
+		</tr>
+	</table>
+	<input type="submit" value="Mark Attendance" name="submit">
+	</div>
 </form>
+<form action="./database/emp-attendance.php" method="post" enctype="multipart/form-data">
+	<div class="att" onclick="show('mark-con')"><i class="fa fa-plus-square" onclick="show('mark-con')"></i>
+		 Attendance Report </div>
+	<div id="mark-con">
+	<h3 class="mark-title"> Employee's Attendance Details</h3> 
+	<table>
+		<tr>
+			<td> Employee's Id</td>
+			<td> <input type="text" name="name" value="Enter Id Here"></td>
+		</tr>
+		<tr>
+			<td> Employee's Name</td>
+			<td> <input type="text" name="name" value="Enter Name Here"></td>
+		</tr>
+		<tr>
+			<td> Subject Code</td>
+			<td> <input type="text" name="code" value="Enter Subject Code"></td>
+		</tr>
+		<tr>
+		<td> Academic Year</td>
+		<td>
+				<select>
+		<option> Select</option>
+		<option> 2016-2017</option>
+		<option> 2015-2016</option>
+		<option> 2014-2015</option>
+		<option> 2013-2014</option>
+		<option> 2012-2013</option>
+		<option> 2011-2012</option>
+		<option> 2010-2011</option>
+		<option> 2009-2010</option>
+		<option> 2008-2009</option>
+		<option> 2007-2008</option>
+		<option> 2006-2007</option>
+		<option> 2005-2006</option>
+		<option> 2004-2005</option>
+		<option> 2003-2004</option>
+		<option> 2002-2003</option>
+		<option> 2001-2002</option>
+		<option> 2000-2001</option>
+		<option> 1999-2000</option>
+		<option> 1998-1999</option>
+		<option> 1997-1998</option>
+		<option> 1996-1997</option>
+		<option> 1995-1996</option>
+		<option> 1994-1995</option>
+		<option> 1993-1994</option>
+		<option> 1992-1993</option>
+		<option> 1991-1992</option>
+		<option> 1990-1991</option>
+		</select>
+			</td>
+		</tr>
+		<tr>
+			<td> Semester </td>
+			<td>
+				<select>
+					<option>Select</option>
+					<option>AUTUMN</option>
+					<option>SPRING</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<input type="submit" value="Get Att. Details" name="submit">
+</form>
+<script type="text/javascript">
+	var d = new Date();
+	document.getElementById('date').innerHTML = d;
+</script>
 </body>
 </html>
